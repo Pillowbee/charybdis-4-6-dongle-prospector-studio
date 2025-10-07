@@ -161,19 +161,12 @@
         label = "Base";
         display-name = "Base";
         bindings = <
-        // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────────╮
-               &kp ESC       &kp N1         &kp N2        &kp N3        &kp N4        &kp N5            &kp N6        &kp N7        &kp N8        &kp N9        &kp N0       &kp DEL
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────────┤
-               &kp TAB       &kp Q          &kp W         &kp E         &kp R         &kp T             &kp Y         &kp U         &kp I         &kp O         &kp P      &kp LEFT_BRACKET
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────────┤
-               &kp ESC       &kp A          &kp S         &kp D         &kp F         &kp G             &kp H         &kp J         &kp K         &kp L       &kp SEMI      &kp APOS
-        // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────────┤
-              &kp LSHFT      &kp Z          &kp X         &kp C         &kp V         &kp B             &kp N         &kp M      &kp COMMA      &kp DOT       &kp FSLH     &kp RIGHT_BRACKET
-        // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────────╯
-                                                          &mo 1        &kp RET     &kp LEFT_GUI      &kp LEFT_ALT     &mo 2 
-        //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯
-                                                                       &kp LCTRL    &kp SPACE         &kp BSPC
-        //                                                         ╰─────────────┴─────────────╯   ╰─────────────╯
+         &kp ESC     &kp N1     &kp N2   &kp N3     &kp N4     &kp N5         &kp N6        &kp N7     &kp N8        &kp N9     &kp N0       &kp DEL
+         &kp TAB     &kp Q      &kp W    &kp E      &kp R      &kp T          &kp Y         &kp U      &kp I         &kp O      &kp P        &kp LEFT_BRACKET
+         &kp ESC     &kp A      &kp S    &kp D      &kp F      &kp G          &kp H         &kp J      &kp K         &kp L      &kp SEMI     &kp APOS
+         &kp LSHFT   &kp Z      &kp X    &kp C      &kp V      &kp B          &kp N         &kp M      &kp COMMA     &kp DOT    &kp FSLH     &kp RSHIFT
+                                         &mo 1      &kp RET    &kp LEFT_GUI   &kp LEFT_ALT  &mo 2 
+                                                    &kp LCTRL  &kp SPACE      &kp BSPC
         >;
     };
 
@@ -181,12 +174,12 @@
       label = "Mouse";
       display-name = "Mouse";
       bindings = <
-        &trans   &trans   &trans   &trans    &trans    &trans            &trans &trans   &trans   &trans   &trans     &trans
-        &trans   &trans   &trans   &trans    &trans    &trans            &trans &trans   &trans   &trans   &trans     &trans 
-        &trans   &kp LGUI &kp LALT &kp LSHFT &kp LCTRL &trans            &trans &mkp MB1 &mkp MB2 &mkp MB3 &trans     &trans
-        &trans   &trans   &trans   &mo 3     &mo 2     &trans            &trans &trans   &trans   &trans   &trans     &trans
-                          &mkp MB1  &mkp MB2  &mkp MB3          &trans &trans
-                          &trans &trans &trans
+        &trans   &trans   &trans   &trans    &trans    &trans            &trans    &trans   &trans   &trans   &trans     &trans
+        &trans   &trans   &trans   &trans    &trans    &trans            &trans    &trans   &trans   &trans   &trans     &trans 
+        &trans   &trans   &trans   &trans    &trans    &trans            &trans    &trans   &trans   &trans   &trans     &trans
+        &trans   &trans   &trans   &trans    &trans    &trans            &trans    &trans   &trans   &trans   &trans     &trans
+                                   &mkp MB1  &mkp MB2  &mkp MB3          &trans    &trans
+                                             &trans    &trans            &trans
       >;
     };
 
@@ -194,19 +187,12 @@
       label = "Symbol";
       display-name = "Symbol";
       bindings = <
-      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &trans         &trans       &trans         &trans      &sys_reset   &bootloader         &trans       &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans         &trans       &kp UP         &trans       &trans         &trans           &kp N7       &kp N8         &kp N9        &kp N0        &kp HOME      &kp F1
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans       &kp LEFT       &kp DOWN     &kp RIGHT      &trans         &trans           &kp N4       &kp N5         &kp N6        &none         &trans        &kp F10
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-           &kp LEFT_ALT    &trans        &trans         &trans      &kp MINUS      &kp PLUS          &kp N1       &kp N2         &kp N3        &kp DOT       &trans        &kp F20
-      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                        &trans       &trans        &trans            &trans        &trans    
-      //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯
-                                                                     &trans        &trans            &trans
-      //                                                         ╰─────────────┴─────────────╯   ╰─────────────╯
+          &trans   &trans     &trans     &trans       &sys_reset  &bootloader    &trans       &trans     &trans          &trans     &trans    &trans
+          &trans   &kp N1     &kp N2     &kp N3       &kp N4      &kp N5         &kp N6       &kp N7     &kp N8          &kp N9     &kp N0    &trans
+          &trans   &kp EXCL   &kp AT     &kp HASH     &kp DLLR    &kp PRCNT      &kp CARET    &kp AMPS   &kp KP_MULTIPLY &kp LPAR   &kp RPAR  &kp PIPE
+          &trans   &kp EQUAL  &kp MINUS  &kp KP_PLUS  &kp LBRC    &kp RBRC       &kp LBKT     &kp RBKT   &kp SEMI        &kp COLON  &kp BSLH  &trans
+                                         &trans       &trans      &trans         &trans       &trans    
+                                                      &trans      &trans         &kp DEL
       >;
     };
 
@@ -214,19 +200,12 @@
       label = "Number";
       display-name = "Number";
       bindings = <
-      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &trans        &trans         &trans       &trans         &trans       &trans          &bootloader    &sys_reset     &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans        &kp EXCL       &kp AT      &kp HASH       &kp DLLR     &kp PRCNT         &kp CARET      &kp AMPS    &kp KP_MULTIPLY &kp LPAR      &kp RPAR      &kp DEL
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans        &trans         &trans       &trans         &trans       &trans           &trans          &trans      &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans        &trans        &trans        &trans         &trans       &trans           &kp MINUS      &kp PLUS     &kp LBRC      &kp RBRC      &kp PIPE      &kp TILDE
-      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                        &trans        &trans       &trans            &trans        &trans    
-      //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯
-                                                                      &trans       &trans            &trans
-      //                                                         ╰─────────────┴─────────────╯   ╰─────────────╯
+          &trans    &trans     &trans  &trans   &trans   &trans         &bootloader      &sys_reset  &trans   &trans    &trans    &trans
+          &trans    &kp LA(F4) &trans  &trans   &trans   &trans         &trans           &trans      &trans   &trans    &trans    &trans
+          &trans    &trans     &trans  &trans   &trans   &trans         &kp LEFT         &kp DOWN    &kp UP   &kp RIGHT &trans    &trans
+          &trans    &trans     &trans  &trans   &trans   &trans         &kp LS(LG(LEFT)) &trans      &trans   &trans    &trans    &trans
+                                       &trans   &trans   &trans         &trans           &trans    
+                                                &trans   &trans         &trans
       >;
     };
 
@@ -234,19 +213,12 @@
       label = "Function";
       display-name = "Function";
       bindings = <
-      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
-             &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans        &trans         &trans       &trans         &trans        &sl 4           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
-             &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &to 0
-      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
-                                                        &trans       &trans         &trans            &trans        &trans    
-      //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯
-                                                                      &trans        &trans            &trans
-      //                                                         ╰─────────────┴─────────────╯   ╰─────────────╯
+             &trans        &trans         &trans       &trans         &trans       &trans          &trans         &trans         &trans        &trans        &trans        &trans
+             &trans        &trans         &trans       &trans         &trans       &trans          &trans         &trans         &trans        &trans        &trans        &trans
+             &trans        &trans         &trans       &trans         &trans       &sl 4           &trans         &trans         &trans        &trans        &trans        &trans
+             &trans        &trans         &trans       &trans         &trans       &trans          &trans         &trans         &trans        &trans        &trans        &to 0
+                                                       &trans         &trans       &trans          &trans         &trans    
+                                                                      &trans       &trans          &trans
       >;
     };
 
@@ -254,19 +226,12 @@
       label = "Game";
       display-name = "Game";
       bindings = <
-      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans        &trans         &trans       &trans         &trans        &sl 4           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &to 0
-      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                         &trans       &trans         &trans            &trans        &trans    
-      //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯
                                                                       &trans        &trans            &trans
-      //                                                         ╰─────────────┴─────────────╯   ╰─────────────╯
       >;
     };
 
@@ -274,19 +239,12 @@
       label = "Reset";
       display-name = "Reset";
       bindings = <
-      // ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮   ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
              &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans        &trans         &trans       &trans         &trans        &sl 4           &trans         &trans         &trans        &trans        &trans        &trans
-      // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
              &trans        &trans         &trans       &trans         &trans       &trans           &trans         &trans         &trans        &trans        &trans        &to 0
-      // ╰─────────────┴─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┴─────────────╯
                                                         &trans       &trans         &trans            &trans        &trans    
-      //                                           ╰─────────────┤─────────────┤─────────────┤   ├─────────────┼─────────────╯
                                                                       &trans        &trans            &trans
-      //                                                         ╰─────────────┴─────────────╯   ╰─────────────╯
       >;
     };
   };
