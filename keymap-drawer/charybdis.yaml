@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: charybdis, layout_name: charybdis_6col_layout}
 layers:
-  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DEL, TAB, Q, W, E, R, T, Y, U, I, O, P, '[', ESC, A, S, D, F, G, H, J, K, L, ;, '''', LSHFT, Z, X,
-    C, V, B, N, M, ',', ., /, RSHIFT, Mouse, RET, LEFT GUI, LEFT ALT, Symbol, LCTRL, SPACE, BSPC]
+  Base: [ESC, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', DEL, ESC, Q, W, E, R, T, Y, U, I, O, P, '[', TAB, A, S, D, F, G, H, J, K, L, ;, '''', LSHIFT, Z, X,
+    C, V, B, N, M, ',', ., /, RSHIFT, Symbol, RET, LEFT GUI, LEFT ALT, Number, LCTRL, SPACE, BSPC]
   Mouse:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -51,9 +51,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: '&mkp MB1', type: held}
+  - '&mkp MB1'
+  - {t: ▽, type: trans}
   - '&mkp MB2'
-  - '&mkp MB3'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -108,11 +108,11 @@ layers:
   - ':'
   - \
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
   - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - DEL
@@ -169,7 +169,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -363,5 +363,3 @@ combos:
   k: TAB
 - p: [11, 12]
   k: Ctl+ BACK SPACE
-- p: [0, 4]
-  k: ZMK Studio
