@@ -101,13 +101,13 @@ ZMK STUDIO попросит вас разлочить клавиатуру дл�
 
 | File   | Comment                                                                 |
 | :----- | :---------------------------------------------------------------------- |
-| charybdis_dongle prospector_adapter-seeeduino_xiao_ble-zmk.uf2  | Если вы используете в качестве донгла проспектор, то вам надо будет прошивать его этим файлом |
-| charybdis_dongle-nice_nano_v2-zmk.uf2    | Если вы используете в качестве донгла контроллер nn, то вам надо будет прошивать его этим файлом |
-| charybdis_dongle-seeeduino_xiao_ble-zmk.uf2 | Если вы используете в качестве донгла xiao или его аналог, то вам надо будет прошивать его этим файлом |
-| charybdis_left-nice_nano_v2-zmk.uf2 | файл прошивкл для левой половины |
-| charybdis_right-nice_nano_v2-zmk.uf2 | Файл прошивки для правой половины |
-| settings_reset-nice_nano_v2-zmk.uf2 | Ресет файл для nice_nano_v2 |
-| settings_reset-seeeduino_xiao_ble-zmk.uf2 | Ресет файл для xiao и для проспектора |
+| charybdis_dongle prospector_adapter-xiao_ble__zmk-zmk.uf2  | Если вы используете в качестве донгла проспектор, то вам надо будет прошивать его этим файлом |
+| charybdis_dongle-nice_nano_nrf52840_zmk-zmk.uf2    | Если вы используете в качестве донгла контроллер nn, то вам надо будет прошивать его этим файлом |
+| charybdis_dongle-xiao_ble__zmk-zmk.uf2 | Если вы используете в качестве донгла xiao или его аналог, то вам надо будет прошивать его этим файлом |
+| charybdis_left-nice_nano_nrf52840_zmk-zmk.uf2 | файл прошивкл для левой половины |
+| charybdis_right-nice_nano_nrf52840_zmk-zmk.uf2 | Файл прошивки для правой половины |
+| settings_reset-nice_nano_nrf52840_zmk-zmk.uf2 | Ресет файл для nice_nano_v2 |
+| settings_reset-xiao_ble__zmk-zmk.uf2 | Ресет файл для xiao и для проспектора |
 
 ## Для чего нужны ресет файлы
 
